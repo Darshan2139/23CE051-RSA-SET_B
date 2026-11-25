@@ -27,8 +27,8 @@ An explainability pipeline for an NBFC's instant EMI-loan approval model, using 
 | Sensitive attributes in reasons | personal_status, age → REVIEW |
 
 ## ✅ Verified on Kaggle — results are identical
-The notebook was re-run on Kaggle (`RSA_SetB_Kaggle_executed.ipynb`, dataset at
-`/kaggle/input/datasets/darshankachhiya/german-credit/german_credit.csv`).
+The notebook (`RSA_SetB_Kaggle_executed.ipynb`) was run on Kaggle with the dataset at
+`/kaggle/input/datasets/darshankachhiya/german-credit/german_credit.csv`.
 Every value matches the local run and the PDF report exactly:
 
 | Output | Local run | Kaggle run | Same? |
@@ -48,18 +48,10 @@ The results can be reproduced because `random_state = 42` is used for the split,
 ## Files
 | File | Description |
 |---|---|
-| `rsa_setB_explainability.py` | Full solution script |
-| `rsa_setB_explainability.ipynb` | Notebook with outputs |
-| `RSA_SetB_Kaggle.ipynb` | Kaggle-ready notebook (auto-loads dataset from `/kaggle/input`) |
-| `RSA_SetB_Kaggle_executed.ipynb` | The notebook as run on Kaggle, with all outputs |
-| `23CE051_External_Practical_Exam.pdf` | Practical report (aim, algorithm, program, output, Q1–Q4, conclusion) |
-| `german_credit.csv` | Dataset: UCI Statlog German Credit (1000 rows, 20 attributes + class), decoded to readable labels |
-| `make_csv.py` | Converts the original coded UCI `german.data` (A11, A12 ...) into `german_credit.csv` |
-| `plots/` | shap_summary, shap_summary_bar, shap_waterfall, shap_force, lime_explanation |
-| `run_output.txt` | Console output of the script |
+| `RSA_SetB_Kaggle_executed.ipynb` | Source code: the full notebook (Tasks 1–6) as run on Kaggle, with all outputs and plots |
+| `german_credit.csv` | Dataset: UCI Statlog German Credit (1000 applicants, 20 attributes + class) |
 
 ## How to run
-```bash
-pip install pandas scikit-learn shap lime matplotlib
-python rsa_setB_explainability.py   # german_credit.csv must be in the same folder
-```
+1. On Kaggle, create a new notebook and attach `german_credit.csv` as a dataset (Add Input → Upload).
+2. Import `RSA_SetB_Kaggle_executed.ipynb` (File → Import Notebook).
+3. Click **Run All**.
