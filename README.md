@@ -53,7 +53,8 @@ The results can be reproduced because `random_state = 42` is used for the split,
 | `RSA_SetB_Kaggle.ipynb` | Kaggle-ready notebook (auto-loads dataset from `/kaggle/input`) |
 | `RSA_SetB_Kaggle_executed.ipynb` | The notebook as run on Kaggle, with all outputs |
 | `23CE051_External_Practical_Exam.pdf` | Practical report (aim, algorithm, program, output, Q1–Q4, conclusion) |
-| `german_credit.csv` | Dataset (decoded UCI Statlog German Credit) |
+| `german_credit.csv` | Dataset: UCI Statlog German Credit (1000 rows, 20 attributes + class), decoded to readable labels |
+| `make_csv.py` | Converts the original coded UCI `german.data` (A11, A12 ...) into `german_credit.csv` |
 | `plots/` | shap_summary, shap_summary_bar, shap_waterfall, shap_force, lime_explanation |
 | `run_output.txt` | Console output of the script |
 
